@@ -1,0 +1,266 @@
+/* Reset style dasar */
+* {
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container utama navbar */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Bagian logo dengan background putih */
+.logo-container {
+    background-color: #ffffff; /* Latar belakang putih untuk logo */
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styling untuk logo */
+.logo {
+    height: 117px 75px; /* Ukuran logo */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #760000; /* Latar belakang merah tua */
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu dalam navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #ffffff; /* Warna teks putih */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #5a0000; /* Warna merah lebih gelap saat hover */
+    border-radius: 5px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #760000;
+    padding: 6px 12px;
+    border-radius: 30px;
+    width: 300px; /* Perbesar lebar */
+    border: 2px solid white; /* Border putih */
+}
+
+/* Input Pencarian */
+.search-box input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 18px; /* Perbesar teks */
+    color: white;
+}
+
+/* Placeholder styling */
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+/* Tombol Search */
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px; /* Perbesar tombol */
+    height: 50px;
+    background: #D9D9D9;
+}
+
+/* Icon Search */
+.search-box button img {
+    width: 25px; /* Perbesar ikon */
+    height: 25px;
+}
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white; /* Latar belakang putih */
+}
+
+/* Container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #760000;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 8px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Tombol */
+.upload-btn, .submit-btn {
+    display: block;
+    background: #760000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.upload-btn:hover, .submit-btn:hover {
+    background: #5a0000;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+/* Popup */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.popup-content img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Informasi dan Kontak */
+.info-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #760000;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.info-text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 60%;
+}
+
+.contact-info {
+
+    background-color: #760000; /* Warna latar belakang */
+    color: #f5e6d3; /* Warna teks lebih lembut */
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 320px; /* Menyesuaikan lebar seperti di gambar */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #f5e6d3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+    font-size: 16px;
+}
+
+.contact-info a img {
+    width: 24px;
+    height: 24px;
+}

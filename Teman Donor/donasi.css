@@ -1,0 +1,269 @@
+/* Reset style dasar */
+* {
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container utama navbar */
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Bagian logo dengan background putih */
+.logo-container {
+    background-color: #ffffff; /* Latar belakang putih untuk logo */
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styling untuk logo */
+.logo {
+    height: 117px 75px; /* Ukuran logo */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #760000; /* Latar belakang merah tua */
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu dalam navbar */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #ffffff; /* Warna teks putih */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #5a0000; /* Warna merah lebih gelap saat hover */
+    border-radius: 5px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #760000;
+    padding: 6px 12px;
+    border-radius: 30px;
+    width: 300px; /* Perbesar lebar */
+    border: 2px solid white; /* Border putih */
+}
+
+/* Input Pencarian */
+.search-box input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 18px; /* Perbesar teks */
+    color: white;
+}
+
+/* Placeholder styling */
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+/* Tombol Search */
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px; /* Perbesar tombol */
+    height: 50px;
+    background: #D9D9D9;
+}
+
+/* Icon Search */
+.search-box button img {
+    width: 25px; /* Perbesar ikon */
+    height: 25px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white; /* Latar belakang putih */
+}
+
+.donation-section {
+    padding: 40px;
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.donation-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.donation-img {
+    width: 32%;
+    border-radius: 8px;
+}
+
+/* Container utama */
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+    border: 2px solid black; /* Sesuai dengan border pada gambar */
+}
+
+/* Teks utama */
+.banner-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Tombol donasi */
+.donate-button {
+    background-color: #b50000;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Hover effect */
+.donate-button:hover {
+    background-color: #990000;
+}
+
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin: 10px 0;
+}
+.progress {
+    height: 100%;
+    background: #d32f2f;
+}
+.donation-count {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.donation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.share-btn, .donate-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.share-btn {
+    background-color: #ddd;
+    color: #333;
+}
+.donate-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Informasi dan Kontak */
+.info-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #760000;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.info-text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 60%;
+}
+
+.contact-info {
+
+    background-color: #760000; /* Warna latar belakang */
+    color: #f5e6d3; /* Warna teks lebih lembut */
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 320px; /* Menyesuaikan lebar seperti di gambar */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #f5e6d3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+    font-size: 16px;
+}
+
+.contact-info a img {
+    width: 24px;
+    height: 24px;
+}
