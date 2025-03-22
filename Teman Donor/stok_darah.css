@@ -1,0 +1,232 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.logo-container {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    height: 75px; 
+    width: auto;
+}
+
+.navbar {
+    background-color: #760000;
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #FDF0D5; 
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #5a0000;
+    border-radius: 5px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #760000;
+    padding: 6px 12px;
+    border-radius: 30px;
+    width: 300px;
+    border: 2px solid white;
+}
+
+.search-box input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 18px;
+    color: white;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #D9D9D9;
+}
+.search-box button img {
+    width: 25px;
+    height: 25px;
+}
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.kotak-pencarian {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    border: 2px solid #800000; 
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.kotak-pencarian input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex-grow: 1;
+    color: #800000;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 30px 0 0 30px; 
+}
+
+.kotak-pencarian input::placeholder {
+    color: #800000;
+    font-size: 16px;
+}
+
+.kotak-pencarian button {
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.kotak-pencarian button img {
+    width: 20px;
+    height: 20px;
+}
+
+.bagian-stok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 0; 
+
+.bagian-stok table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+}
+
+.bagian-stok th, .bagian-stok td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.bagian-stok th {
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+.bagian-stok td {
+    color: #333;
+}
+.info-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #760000;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    border-radius: 10px;
+}
+.info-text {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 60%;
+}
+.contact-info {
+    background-color: #760000;
+    color: #f5e6d3;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #f5e6d3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+}

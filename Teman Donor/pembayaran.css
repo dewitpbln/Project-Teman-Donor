@@ -1,0 +1,268 @@
+
+* {
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo-container {
+    background-color: #ffffff; 
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.logo {
+    height: 117px 75px; 
+}
+
+
+.navbar {
+    background-color: #760000; 
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #5a0000; 
+    border-radius: 5px;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #760000;
+    padding: 6px 12px;
+    border-radius: 30px;
+    width: 300px; 
+    border: 2px solid white; 
+}
+
+.search-box input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 18px; 
+    color: white;
+}
+
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+
+.search-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px;
+    background: #D9D9D9;
+}
+
+
+.search-box button img {
+    width: 25px; 
+    height: 25px;
+}
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.donation-container {
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.donation-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background: white;
+    color: #760000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donation-btn:hover {
+    background: #e6e6e6;
+}
+
+.custom-amount {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.custom-amount label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #760000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.currency {
+    font-size: 18px;
+    font-weight: bold;
+    color: #760000;
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    border: none;
+    font-size: 18px;
+    flex: 1;
+    outline: none;
+    text-align: right;
+}
+
+/* Tombol Pembayaran */
+.pay-btn {
+    background: #760000;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #5a0000;
+}
+
+/* Informasi dan Kontak */
+.info-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #760000;
+    color: white;
+    padding: 20px 50px;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.info-text {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 60%;
+}
+
+.contact-info {
+
+    background-color: #760000; 
+    color: #f5e6d3; 
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #f5e6d3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 16px;
+}
+
+.contact-info a img {
+    width: 24px;
+    height: 24px;
+}

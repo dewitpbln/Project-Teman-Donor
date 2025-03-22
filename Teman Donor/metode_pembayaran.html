@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran</title>
+    <link rel="stylesheet" href="metode_pembayaran.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assest/img.png/Frame 33947.png" alt="Logo Teman Donor" class="logo">
+        </nav>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="beranda.html">BERANDA</a></li>
+                <li><a href="#">PERMOHONAN</a></li>
+                <li><a href="stok_darah.html">STOK DARAH</a></li>
+                <li><a href="#">DONASI</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Pencarian...">
+                <button>
+                    <img src="assest/img.png/logo pencarian.png" alt="Cari">
+                </button>
+            </div>
+        </nav>
+    </header>  
+
+    <main>
+        <section class="payment-container">
+            <h2>Pilih Metode Pembayaran</h2>
+            <div class="payment-methods">
+                <label class="payment-option">
+                    <span><img src="assest/img.png/qris.png" alt="Qris"> Qris</span>
+                    <input type="radio" name="payment" value="qris" onclick="enablePayButton()">
+                </label>
+                <label class="payment-option">
+                    <span><img src="assest/img.png/gopay.png" alt="Gopay"> Gopay</span>
+                    <input type="radio" name="payment" value="gopay" onclick="enablePayButton()">
+                </label>
+                <label class="payment-option">
+                    <span><img src="assest/img.png/spay.png" alt="ShopeePay"> ShopeePay</span>
+                    <input type="radio" name="payment" value="shopeepay" onclick="enablePayButton()">
+                </label>
+                <label class="payment-option">
+                    <span><img src="assest/img.png/dana.png" alt="Dana"> Dana</span>
+                    <input type="radio" name="payment" value="dana" onclick="enablePayButton()">
+                </label>
+                <label class="payment-option">
+                    <span><img src="assest/img.png/ovo.png" alt="Ovo"> Ovo</span>
+                    <input type="radio" name="payment" value="ovo" onclick="enablePayButton()">
+                </label>
+            </div>
+            <button class="pay-btn" disabled onclick="showPopup()">Lanjut Pembayaran</button>
+        </section>
+    </main>
+
+    <!-- Popup Konfirmasi Pembayaran -->
+    <div id="popup" class="popup-container" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-header">
+                <img src="assest/img.png/Pop up hijau.png" alt="Success" class="check-icon">
+            </div>
+            <div class="popup-body">
+                <p>Transaksi Anda Berhasil,<br> Selanjutnya kembali ke beranda</p>
+            </div>
+            <button class="popup-button" onclick="closePopup()">Kembali</button>
+        </div>
+    </div>
+
+    <!-- Popup Gagal Pembayaran -->
+    <div id="popup-failed" class="popup-container" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-failed-header">
+                <img src="assest/img.png/Pop up merah.png" alt="Failed" class="check-icon">
+            </div>
+            <div class="popup-body">
+                <p>Transaksi Anda Gagal,<br> Silahkan anda mengulangi prosedur pembayaran</p>
+            </div>
+            <button class="popup-failed-button" onclick="closePopup()">Coba Lagi</button>
+        </div>
+    </div>
+
+    <div class="info-contact-container">
+        <div class="info-text">
+            <p>
+                Setetes darah, sejuta harapan.<br>
+                Bergabunglah dengan <strong>Teman Donor</strong><br>
+                dan jadilah bagian dari perubahan<br>
+                untuk menyelamatkan nyawa.
+            </p>
+        </div>
+        <div class="contact-info">
+            <h3>Hubungi Kami</h3>
+            <a href="mailto:teman.donorid@gmail.com">
+                <img src="assest/img.png/email.png" alt="Email"> teman.donorid@gmail.com
+            </a>
+            <a href="tel:+628887777666">
+                <img src="assest/img.png/telepon.png" alt="Telepon"> +62 888 7777 6666
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function enablePayButton() {
+            document.querySelector('.pay-btn').disabled = false;
+        }
+
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function showPopupFailed() {
+            document.getElementById('popup-failed').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popup-failed').style.display = 'none';
+            window.location.href = 'beranda.html'; 
+        }
+    </script>
+</body>
+</html>

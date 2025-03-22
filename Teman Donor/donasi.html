@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donasi</title>
+    <link rel="stylesheet" href="donasi.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assest/img.png/Frame 33947.png" alt="Logo Teman Donor" class="logo">
+        </nav>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="beranda.html">BERANDA</a></li>
+                <li><a href="permohonan.html">PERMOHONAN</a></li>
+                <li><a href="stok_darah.html">STOK DARAH</a></li>
+                <li><a href="donasi.html">DONASI</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Pencarian...">
+                <button>
+                    <img src="assest/img.png/logo pencarian.png" alt="Cari">
+                </button>
+            </div>
+        </nav>
+    </header>    
+
+    <section class="donation-section">
+        <div class="donation-images">
+            <img src="assest/img.png/donasi 1.png" alt="Donor Darah" class="donation-img">
+            <img src="assest/img.png/donasi 2.png" alt="Lokasi Donor" class="donation-img">
+            <img src="assest/img.png/donasi 3.png" alt="Pendaftaran Donor" class="donation-img">
+        </div>
+
+        <div class="banner-container">
+            <p class="banner-text">Dukung mereka yang berjuang dengan satu langkah kecil</p>
+            <button class="donate-button">Donasimu, Harapan mereka.</button>
+        </div>
+
+        <div class="donation-content">
+            <p class="donation-amount">Donasi terkumpul</p>
+            <p class="donation-total">Rp12.520.000</p>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+            <p class="donation-count">&#128100; 125 Donasi</p>
+            <div class="donation-buttons">
+                <button class="share-btn">Bagikan</button>
+                <button type="button" class="donate-btn" onclick="window.location.href='pembayaran.html'">Donasi Sekarang</button>
+            </div>
+        </div>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Arial', sans-serif;
+            }
+            .button-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 20px;
+                justify-content: center;
+            }
+            .share-btn {
+                background-color: white;
+                color: #b00000;
+                font-weight: bold;
+                font-size: 20px;
+                border: 2px solid #b00000;
+                padding: 15px 30px;
+                border-radius: 35px;
+                cursor: pointer;
+                width: 377px;
+                height: 66px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .donate-btn {
+                background-color: #760000;
+                color: #f5e6d3;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 35px;
+                cursor: pointer;
+                width: 780px;
+                height: 66px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </section>
+
+    <div class="info-contact-container">
+        <div class="info-text">
+            <p>
+                Setetes darah, sejuta harapan.<br>
+                Bergabunglah dengan <strong>Teman Donor</strong><br>
+                dan jadilah bagian dari perubahan<br>
+                untuk menyelamatkan nyawa.
+            </p>
+        </div>
+        <div class="contact-info">
+            <h3>Hubungi Kami</h3>
+            <a href="mailto:teman.donorid@gmail.com">
+                <img src="assest/img.png/email.png" alt="Email"> teman.donorid@gmail.com
+            </a>
+            <a href="tel:+628887777666">
+                <img src="assest/img.png/telepon.png" alt="Telepon"> +62 888 7777 6666
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
